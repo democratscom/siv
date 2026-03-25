@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop ICE — Vote to Stop ICE</title>
+<meta name="description" content="ICE is killing us. We can stop ICE if we all vote on November 3. Pledge to vote to stop ICE.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stop ICE — Pledge to Vote">
+<meta property="og:description" content="ICE is killing us. We can STOP ICE if we all VOTE on November 3. Take the pledge.">
+<meta property="og:url" content="https://stopice.vote">
+<meta property="og:image" content="https://stopice.vote/images/hero.jpg">
+<meta property="og:site_name" content="StopICE.vote">
+
+<!-- Twitter/X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stop ICE — Pledge to Vote">
+<meta name="twitter:description" content="ICE is killing us. We can STOP ICE if we all VOTE on November 3. Take the pledge.">
+<meta name="twitter:image" content="https://stopice.vote/images/hero.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<style>
+  /* Google Translate */
+  .goog-te-banner-frame { display: none !important; }
+  body { top: 0 !important; }
+  .goog-te-gadget-simple { background: transparent !important; border: none !important; padding: 0 !important; white-space: nowrap !important; display: inline-flex !important; align-items: center !important; gap: 2px !important; }
+  .goog-te-gadget-simple span, .goog-te-gadget-simple a { color: rgba(255,255,255,0.8) !important; font-family: 'Public Sans', sans-serif !important; font-size: 13px !important; font-weight: 700 !important; letter-spacing: 0.05em !important; text-transform: uppercase !important; text-decoration: none !important; display: inline !important; vertical-align: middle !important; }
+  .goog-te-gadget-simple img { vertical-align: middle !important; display: inline !important; }
+  .goog-te-gadget-icon { display: none !important; }
+
+  /* ── Hero ──────────────────────────────────────────── */
+  .demands {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0;
+  }
+  .demands li {
+    font-size: clamp(16px, 2.2vw, 20px);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.6;
+    padding-left: 0;
+  }
+  .demands li strong {
+    color: #ffd0d0;
+  }
+
+  /* ── CTA ribbons ──────────────────────────────────── */
+  .cta-ribbon {
+    display: block;
+    background: var(--red);
+    color: #fff;
+    font-family: 'Public Sans', sans-serif;
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 18px 24px;
+    margin-bottom: 2px;
+    transition: opacity 0.15s;
+  }
+  .cta-ribbon:hover { opacity: 0.88; }
+  .cta-ribbon.alt {
+    background: var(--blue);
+  }
+  @media (min-width: 641px) {
+    .cta-ribbon-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      padding: 28px 24px;
+      background: var(--off-white);
+    }
+    .cta-ribbon {
+      display: inline-block;
+      border-radius: 4px;
+      padding: 18px 36px;
+      margin-bottom: 0;
+      font-size: 17px;
+    }
+  }
+  @media (max-width: 640px) {
+    .cta-ribbon-row {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* ── Form section ─────────────────────────────────── */
+  .form-section {
+    padding: 56px 24px 64px;
+    background: var(--white);
+  }
+  .form-section-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .form-section h2 {
+    font-size: clamp(22px, 3.5vw, 32px);
+    font-weight: 900;
+    color: var(--red);
+    text-align: center;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+  }
+  .form-section .pledge-text {
+    font-size: clamp(15px, 2vw, 18px);
+    color: var(--text);
+    text-align: center;
+    line-height: 1.55;
+    margin-bottom: 32px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── AN embed overrides (from embed doc) ──────────── */
+  :root {
+    --an-accent:      #AF2534;
+    --an-accent-text: #ffffff;
+    --an-font:        'Public Sans', sans-serif;
+    --an-radius:      3px;
+  }
+  .an-form-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .can_embed #can_embed_form {
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    font-family: var(--an-font) !important;
+  }
+  #can_embed_form #logo_wrap,
+  #can_embed_form #action_info,
+  #can_embed_form #can_sidebar,
+  #can_embed_form #d_sharing,
+  #can_embed_form .action_sidebar
+  { display: none !important; }
+  #can_embed_form ul,
+  #can_embed_form ol,
+  #can_embed_form li {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  #can_main_col {
+    width: 100% !important;
+    float: none !important;
+  }
+  #can_embed_form.can_float #form_col1,
+  #can_embed_form.can_float #form_col2,
+  #can_embed_form #can_sidebar {
+    float: none !important;
+    width: 100% !important;
+  }
+  #can_embed_form input[type=text],
+  #can_embed_form input[type=email],
+  #can_embed_form input[type=tel],
+  #can_embed_form input[type=number],
+  #can_embed_form select,
+  #can_embed_form textarea {
+    width: 100% !important;
+    padding: 12px 14px !important;
+    font-family: var(--an-font) !important;
+    font-size: 15px !important;
+    border: 1.5px solid #ccc !important;
+    border-radius: var(--an-radius) !important;
+    background: #fff !important;
+    color: #1a1a1a !important;
+    box-sizing: border-box !important;
+    margin-bottom: 12px !important;
+  }
+  #can_embed_form input:focus,
+  #can_embed_form select:focus {
+    border-color: var(--an-accent) !important;
+    outline: none !important;
+  }
+  #can_embed_form .floatlabel-label {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    font-family: var(--an-font) !important;
+    color: #444 !important;
+    position: static !important;
+    transform: none !important;
+    margin-bottom: 4px !important;
+    display: block !important;
+  }
+  #can_embed_form input[type=submit],
+  #can_embed_form .button {
+    display: block !important;
+    width: 100% !important;
+    padding: 15px !important;
+    background: var(--an-accent) !important;
+    color: var(--an-accent-text) !important;
+    font-family: var(--an-font) !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+    border: none !important;
+    border-radius: var(--an-radius) !important;
+    cursor: pointer !important;
+    margin-top: 8px !important;
+  }
+  #can_embed_form input[type=submit]:hover,
+  #can_embed_form .button:hover {
+    opacity: 0.88 !important;
+  }
+  #can_embed_form #can_thank_you {
+    background: transparent !important;
+    padding: 24px 0 !important;
+    text-align: left !important;
+  }
+  #can_embed_form #can_thank_you h1 {
+    font-family: var(--an-font) !important;
+    font-size: 24px !important;
+    color: var(--an-accent) !important;
+  }
+  #can_embed_form #can_thank_you p {
+    font-family: var(--an-font) !important;
+    font-size: 15px !important;
+    color: #333 !important;
+  }
+
+  /* ── Hide AN extra headings & country selector ─────── */
+  #can_embed_form h2,
+  #can_embed_form h4,
+  #can_embed_form .international_link,
+  #can_embed_form #form_country,
+  #can_embed_form .country_wrap,
+  #can_embed_form [class*="country"],
+  #can_embed_form #international_link_wrap,
+  #can_embed_form #international_link,
+  #can_embed_form [id*="international"],
+  #can_embed_form select[name="country"]
+  { display: none !important; }
+
+  /* ── Hide AN post-submit sharing/embed panel ─────── */
+  #can_embed_form #d_sharing,
+  #can_embed_form #sharing_options,
+  #can_embed_form [id*="sharing"],
+  #can_embed_form [class*="sharing"],
+  #can_embed_form .embed_code,
+  #can_embed_form .action_status_running,
+  #can_embed_form .can_thank_you_large
+  { display: none !important; }
+
+  /* ── Download success message ─────────────────────── */
+  .download-success {
+    display: none;
+    background: #1a3a1a;
+    color: #fff;
+    text-align: center;
+    padding: 16px 24px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .download-success.show { display: block; }
+</style>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'es',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAV — logo + donate + translate
+     ═══════════════════════════════════════════════════════ -->
+<nav class="site-nav">
+  <a href="#" aria-label="Stop ICE — Home">
+    <img src="images/Stop_ICE_logotype_transparent.png" alt="STOP ICE.VOTE" style="height:52px;width:auto;">
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="https://secure.actblue.com/donate/stop-ice-1" class="nav-cta" target="_blank" rel="noopener">Support</a></li>
+    <li id="google_translate_element" style="display:flex;align-items:center;"></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg" role="img" aria-label="Protest march against ICE"
+       style="background-image: url('images/hero.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>ICE is Killing Us.</h1>
+    <p class="hero-body">We can <strong>STOP ICE</strong> if we all <strong>VOTE</strong> on November 3.</p>
+    <ul class="demands">
+      <li>We demand:</li>
+      <li><strong>1.</strong> No Secret Police</li>
+      <li><strong>2.</strong> No Concentration Camps</li>
+      <li><strong>3.</strong> Feed Hungry Kids</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA BUTTONS -->
+<div class="cta-ribbon-row">
+  <a href="#pledge" class="cta-ribbon">Pledge to Vote to STOP ICE</a>
+  <a href="pdfs/Stop_ICE_bumper_sticker_download.pdf" class="cta-ribbon alt" id="downloadBtn" download>Download a Free Bumper Sticker</a>
+</div>
+<div class="download-success" id="downloadSuccess">✓ Success! Check your downloads folder.</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     FORM
+     ═══════════════════════════════════════════════════════ -->
+<section class="form-section" id="pledge">
+  <div class="form-section-inner">
+    <h2>Pledge to Vote to STOP ICE</h2>
+    <p class="pledge-text">I will vote to STOP ICE on November 3 and ask my family and friends to join me.</p>
+    <div class="an-form-wrap">
+      <script src='https://actionnetwork.org/widgets/v2/form/pledge-to-vote-for-stop-ice-candidates?format=js&source=widget'></script>
+      <div id='can-form-area-pledge-to-vote-for-stop-ice-candidates' style='width: 100%'></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <a href="#" aria-label="Stop ICE — Home">
+      <img src="images/Stop_ICE_logotype_transparent.png" alt="STOP ICE.VOTE" style="height:40px;width:auto;">
+    </a>
+    <ul class="footer-nav">
+      <li><a href="https://secure.actblue.com/donate/stop-ice-1" target="_blank" rel="noopener">Support</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-legal">The Stop ICE campaign is a project of Democrats.com LLC. Not authorized by any candidate or candidate's committee.</p>
+    <div class="footer-social">
+      <a href="https://democrats.com/" target="_blank" rel="noopener">Democrats.com</a>
+      <a href="https://bsky.app/profile/democratsdotcom.bsky.social" target="_blank" rel="noopener">BlueSky</a>
+      <a href="https://x.com/democratsdotcom" target="_blank" rel="noopener">Twitter/X</a>
+      <a href="https://www.facebook.com/democratscom" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/democratscom/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie consent -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <p>This site uses cookies for functionality. See our <a href="privacy.html">Privacy Policy</a> and the <a href="https://web.democrats.com/privacy/" target="_blank" rel="noopener">Democrats.com Privacy Policy</a>.</p>
+  <button class="cookie-accept" onclick="acceptCookies()">Got it</button>
+</div>
+<script>
+(function(){
+  if(navigator.globalPrivacyControl || navigator.doNotTrack === '1'){
+    document.getElementById('cookieBanner').style.display = 'none';
+    return;
+  }
+  if(localStorage.getItem('cookieConsent') === 'true'){
+    document.getElementById('cookieBanner').style.display = 'none';
+  }
+})();
+function acceptCookies(){
+  localStorage.setItem('cookieConsent','true');
+  document.getElementById('cookieBanner').style.display = 'none';
+}
+document.getElementById('downloadBtn').addEventListener('click', function(){
+  var msg = document.getElementById('downloadSuccess');
+  msg.classList.add('show');
+  setTimeout(function(){ msg.classList.remove('show'); }, 6000);
+});
+function handleFormSuccess(){
+  var form = document.querySelector('.an-form-wrap');
+  var siteUrl = 'https://stopice.vote';
+  var shareText = 'I just pledged to vote to STOP ICE. Join me.';
+  var fbUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(siteUrl);
+  var xUrl = 'https://x.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(siteUrl);
+  var bskyUrl = 'https://bsky.app/intent/compose?text=' + encodeURIComponent(shareText + ' ' + siteUrl);
+  if(form){
+    form.innerHTML = ''
+      + '<div style="text-align:center;padding:40px 0;">'
+      + '<h2 style="font-size:28px;font-weight:900;color:#AF2534;margin-bottom:12px;">You\'re in.</h2>'
+      + '<p style="font-size:17px;color:#1a1a1a;line-height:1.55;margin-bottom:28px;">Thank you for pledging to vote to STOP ICE.<br>Now spread the word.</p>'
+      + '<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;">'
+      + '<a href="' + fbUrl + '" target="_blank" rel="noopener" style="display:inline-block;background:#1877F2;color:#fff;padding:12px 24px;font-size:14px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:0.06em;border-radius:3px;">Share on Facebook</a>'
+      + '<a href="' + xUrl + '" target="_blank" rel="noopener" style="display:inline-block;background:#000;color:#fff;padding:12px 24px;font-size:14px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:0.06em;border-radius:3px;">Share on X</a>'
+      + '<a href="' + bskyUrl + '" target="_blank" rel="noopener" style="display:inline-block;background:#0085FF;color:#fff;padding:12px 24px;font-size:14px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:0.06em;border-radius:3px;">Share on BlueSky</a>'
+      + '</div>'
+      + '<button onclick="navigator.clipboard.writeText(\'' + siteUrl + '\');this.textContent=\'Link Copied!\';this.style.background=\'#1a3a1a\';this.style.color=\'#fff\';" style="display:inline-block;background:transparent;border:2px solid #002768;color:#002768;padding:12px 24px;font-family:Public Sans,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;border-radius:3px;cursor:pointer;">Copy Link to Share</button>'
+      + '</div>';
+  }
+}
+document.addEventListener('can_embed_submission_success', handleFormSuccess);
+document.addEventListener('actionnetwork:form:submitted', handleFormSuccess);
+// Fallback: MutationObserver watches for AN's thank-you state
+(function(){
+  var observer = new MutationObserver(function(mutations){
+    var ty = document.getElementById('can_thank_you');
+    if(ty && ty.offsetHeight > 0){
+      observer.disconnect();
+      handleFormSuccess();
+    }
+  });
+  var target = document.getElementById('can-form-area-pledge-to-vote-for-stop-ice-candidates');
+  if(target){
+    observer.observe(target, {childList: true, subtree: true, attributes: true});
+  }
+})();
+</script>
+
+</body>
+</html>
